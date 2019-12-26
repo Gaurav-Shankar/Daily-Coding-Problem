@@ -9,6 +9,7 @@ public class Day1ProblemTest {
         int[] numbers = {10, 15, 3, 7};
         int sum = 17;
         Assert.assertTrue(day1Problem.doNumbersPairUpToSum(numbers, sum));
+        Assert.assertTrue(day1Problem.doNumbersPairUpToSumInNTime(numbers,sum));
     }
 
     @Test
@@ -17,6 +18,7 @@ public class Day1ProblemTest {
         int[] numbers = {};
         int sum = 17;
         Assert.assertTrue(!day1Problem.doNumbersPairUpToSum(numbers, sum));
+        Assert.assertTrue(!day1Problem.doNumbersPairUpToSumInNTime(numbers,sum));
     }
 
     @Test
@@ -25,5 +27,6 @@ public class Day1ProblemTest {
         int[] numbers = {10, 15, 3, 4};
         int sum = 17;
         Assert.assertTrue(!day1Problem.doNumbersPairUpToSum(numbers, sum));
+        Assert.assertTrue(!day1Problem.doNumbersPairUpToSumInNTime(numbers,sum));
     }
 }
